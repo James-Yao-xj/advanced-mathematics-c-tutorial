@@ -429,12 +429,14 @@ $ M=abs(g'(xi))(c-a)<=M/(2(b-a))(c-a)<=M/2, $
 
 == 例 36　差商的界 #footnote[C，2023 期中，7。]
 
-设 $f$ 在 0 处可导，且当 $abs(x)<1$ 时， $abs(f(x))<=abs(ln(1+arcsin x)).$ 证明 $abs(f'(0))<=1$。
+设 $f$ 在 0 处可导，且当 $abs(x)<1$ 时， $abs(f(x))<=ln(1+abs(arcsin x)).$ 证明 $abs(f'(0))<=1$。
 
 #answer[
-令 $x=0$，知 $f(0)=0$。对 $x!=0$，有
-$ abs((f(x)-f(0))/x)<=abs((ln(1+arcsin x))/x). $
-右端趋于 1，因为 $arcsin x tilde x$、$ln(1+u) tilde u$。左端趋于 $abs(f'(0))$，故 $abs(f'(0))<=1$。
+原卷右端为 $ln(1+abs(arcsin x))$，绝对值在反正弦外、对数内。令 $x=0$，得 $f(0)=0$。对 $x!=0$，有
+$ abs((f(x)-f(0))/x)<= (ln(1+abs(arcsin x)))/(abs(x)). $
+令 $u=abs(arcsin x) -> 0$，则右端等于
+$ (ln(1+u))/u dot (abs(arcsin x))/(abs(x)) -> 1. $
+左端趋于 $abs(f'(0))$，故 $abs(f'(0))<=1$。因为对数内有绝对值，题设在整个 $abs(x)<1$ 上均有实数意义。
 ]
 
 == 例 37　恰有两个实根 #footnote[B，2024 期中，第 7 题。]
@@ -691,12 +693,16 @@ $ x sin(1/[x])=x/[x] dot (sin(1/[x]))/(1/[x]) -> 1. $
 
 == 习题 5　多层幂指函数 #footnote[C，2023 期中，2(2)。]
 
-设 $y=x^(x^3)$，$x>0$，求 $y'$。
+设 $y=x^(x^(x^3))$，$x>0$，求 $y'$。
 
 #answer[
-因 $x>0$，取对数得 $ln y=x^3 ln x$，所以
-$ y'/y=3x^2ln x+x^2. $
-故 $y'=x^(x^3)x^2(3ln x+1)$。
+原卷为三层幂 $y=x^(x^(x^3))$。先令 $u=x^(x^3)$，则 $y=x^u$。对内层取对数：$ln u=x^3ln x$，所以
+$ u'=u x^2(3ln x+1). $
+再由 $ln y=u ln x$，得
+$ y'/y=u'ln x+u/x. $
+代入上式，得到
+$ y'=x^u u(x^2(3ln x+1)ln x+1/x), quad u=x^(x^3), quad x>0. $
+这里必须对内、外两层幂分别应用对数求导，不能把 $x^(x^(x^3))$ 误读为 $x^(x^3)$。
 ]
 
 == 习题 6　隐式求导 #footnote[C，2025 期中，2。]
@@ -766,7 +772,7 @@ $ F'(x)=e^x-2x+2a>=2-2ln 2+2a>0. $
 
 #pagebreak()
 
-== 习题 12　中值定理与二项式公式 #footnote[B，2023 期末，9。]
+== 习题 12　中值定理与二项式公式 #footnote[B，2023 期末，9；原命题条件有缺漏，见配套解析中的反例与修正。]
 
 设 $P$ 在 $[0,1]$ 上连续，$P(0)=0$，$P(1)=1$；在 $(0,1)$ 内可导，且 $P'(x)>0$。任取 $A,B in RR$ 与正整数 $n$，证明存在 $0<theta_0<theta_1<dots<theta_n<1,$ 使 $(A+B)^n=sum_(k=0)^n 1/(P'(theta_k)) binom(n,k) A^(n-k)B^k.$
 
