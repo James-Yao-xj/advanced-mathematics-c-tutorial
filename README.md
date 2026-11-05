@@ -43,11 +43,12 @@ typst compile handouts/高等数学BC-前三章讲义.typ handouts/高等数学B
 
 ## 课程主页
 
-主页仅展示资料目录。点击讲义或配套解析卡片，即可打开对应 PDF。
+使用 MkDocs Material 构建，采用黑白配色与课程文档布局。首页和左侧导航均可直接打开讲义及配套解析。
 
-- 网页入口：`index.html`；样式位于 `assets/`，无需安装依赖。
-- 本地预览：在仓库目录运行 `python3 -m http.server 8000`，访问 `http://localhost:8000`。
-- 首次发布：进入仓库 **Settings → Pages → Build and deployment**，将 Source 设为 **GitHub Actions**。合并主页改动到 `main` 后，工作流自动发布；也可在 Actions 中手动运行 **Deploy course homepage**。
+- 页面内容：`docs/index.md`。
+- 导航及站点设置：`mkdocs.yml`。
+- 自定义样式：`docs/stylesheets/extra.css`。
+- 本地预览：安装 `requirements.txt` 中的依赖，将 `handouts/` 中的 PDF 复制至 `docs/handouts/`，然后运行 `mkdocs serve`。
 - 发布地址：<https://james-yao-xj.github.io/advanced-mathematics-c-tutorial/>。
 
-后续更新 `main` 中的网页或 PDF 会自动重新发布。网站只发布网页资源与 PDF；Typst 源文件仍在仓库提供。
+更新 `main` 后由 GitHub Actions 自动构建并发布。PDF 继续在 `handouts/` 中统一维护。

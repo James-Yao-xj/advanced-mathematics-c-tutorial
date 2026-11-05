@@ -18,17 +18,21 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install documentation tools
+        run: pip install -r requirements.txt
       - uses: actions/configure-pages@v5
-      # Publish only the website and PDFs. Keep source files in the repository.
-      - name: Prepare static site
+      # Keep the original PDFs as the only source of published handouts.
+      - name: Build documentation site
         run: |
-          mkdir -p _site/handouts
-          cp index.html 404.html _site/
-          cp -R assets _site/assets
-          cp handouts/*.pdf _site/handouts/
+          mkdir -p docs/handouts
+          cp handouts/*.pdf docs/handouts/
+          mkdocs build --strict
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: _site
+          path: site
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4

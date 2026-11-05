@@ -1,0 +1,29 @@
+site_name: 高等数学 C 小班课
+site_url: https://james-yao-xj.github.io/advanced-mathematics-c-tutorial/
+repo_name: James-Yao-xj/advanced-mathematics-c-tutorial
+repo_url: https://github.com/James-Yao-xj/advanced-mathematics-c-tutorial
+edit_uri: ''
+theme:
+  name: material
+  language: zh
+  font: false
+  features:
+    - navigation.sections
+  favicon: assets/favicon.svg
+  palette:
+    primary: black
+    accent: grey
+nav:
+  - 首页: index.md
+  - 课程资料:
+      - 前三章讲义: handouts/高等数学BC-前三章讲义.pdf
+      - 配套解析: handouts/高等数学BC-前三章配套解析.pdf
+plugins: []
+extra_css:
+  - stylesheets/extra.css
+extra:
+  generator: false
+markdown_extensions:
+  - attr_list
+  - toc:
+      permalink: true
