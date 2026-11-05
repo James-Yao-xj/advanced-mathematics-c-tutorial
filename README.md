@@ -43,9 +43,9 @@ typst compile handouts/高等数学BC-前三章讲义.typ handouts/高等数学B
 
 ## 课程主页
 
-主页提供课程概览、章节目录，以及讲义与解析的在线阅读和下载入口。
+主页仅展示资料目录。点击讲义或配套解析卡片，即可打开对应 PDF。
 
-- 网页入口：`index.html`；样式和交互位于 `assets/`，无需安装依赖。
+- 网页入口：`index.html`；样式位于 `assets/`，无需安装依赖。
 - 本地预览：在仓库目录运行 `python3 -m http.server 8000`，访问 `http://localhost:8000`。
 - 首次发布：进入仓库 **Settings → Pages → Build and deployment**，将 Source 设为 **GitHub Actions**。合并主页改动到 `main` 后，工作流自动发布；也可在 Actions 中手动运行 **Deploy course homepage**。
 - 发布地址：<https://james-yao-xj.github.io/advanced-mathematics-c-tutorial/>。
