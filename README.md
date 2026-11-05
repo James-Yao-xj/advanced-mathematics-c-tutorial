@@ -40,3 +40,14 @@ typst compile handouts/高等数学BC-前三章讲义.typ handouts/高等数学B
 - 课后习题 12：讲义明确标注原命题条件缺漏；解析保留反例及补充 $AB\ge0$ 后的证明。
 
 讲义与配套解析分别为 29 页、17 页；两者的 PDF 和 Typst 源文件均已同步修正。
+
+## 课程主页
+
+主页提供课程概览、章节目录，以及讲义与解析的在线阅读和下载入口。
+
+- 网页入口：`index.html`；样式和交互位于 `assets/`，无需安装依赖。
+- 本地预览：在仓库目录运行 `python3 -m http.server 8000`，访问 `http://localhost:8000`。
+- 首次发布：进入仓库 **Settings → Pages → Build and deployment**，将 Source 设为 **GitHub Actions**。合并主页改动到 `main` 后，工作流自动发布；也可在 Actions 中手动运行 **Deploy course homepage**。
+- 发布地址：<https://james-yao-xj.github.io/advanced-mathematics-c-tutorial/>。
+
+后续更新 `main` 中的网页或 PDF 会自动重新发布。网站只发布网页资源与 PDF；Typst 源文件仍在仓库提供。
