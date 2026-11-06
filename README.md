@@ -4,6 +4,11 @@
 
 ## 讲义
 
+- [前三章知识点提要 · PDF](handouts/高等数学C-前三章知识点提要.pdf)
+- [前三章知识点提要 · Typst 源文件](handouts/高等数学C-前三章知识点提要.typ)
+
+知识点提要共 6 页，按教材前三章的章、节顺序梳理定义、公式、定理条件与易错点。
+
 - [前三章讲义 · PDF](handouts/高等数学BC-前三章讲义.pdf)
 - [前三章讲义 · Typst 源文件](handouts/高等数学BC-前三章讲义.typ)
 - [配套解析 · PDF](handouts/高等数学BC-前三章配套解析.pdf)
@@ -40,15 +45,3 @@ typst compile handouts/高等数学BC-前三章讲义.typ handouts/高等数学B
 - 课后习题 12：讲义明确标注原命题条件缺漏；解析保留反例及补充 $AB\ge0$ 后的证明。
 
 讲义与配套解析分别为 29 页、17 页；两者的 PDF 和 Typst 源文件均已同步修正。
-
-## 课程主页
-
-使用 MkDocs Material 构建，采用黑白配色与课程文档布局。首页和左侧导航均可直接打开讲义及配套解析。
-
-- 页面内容：`docs/index.md`。
-- 导航及站点设置：`mkdocs.yml`。
-- 自定义样式：`docs/stylesheets/extra.css`。
-- 本地预览：安装 `requirements.txt` 中的依赖，将 `handouts/` 中的 PDF 复制至 `docs/handouts/`，然后运行 `mkdocs serve`。
-- 发布地址：<https://james-yao-xj.github.io/advanced-mathematics-c-tutorial/>。
-
-更新 `main` 后由 GitHub Actions 自动构建并发布。PDF 继续在 `handouts/` 中统一维护。
