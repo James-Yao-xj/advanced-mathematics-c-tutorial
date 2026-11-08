@@ -5,6 +5,10 @@
 ## 资料目录
 
 <div class="resource-list">
+  <a class="resource-card" href="handouts/高等数学C-第二次课讲义.pdf">
+    <strong>第二次课：有理函数与有理化积分</strong>
+    <span>PDF · 13 页 · 13 道例题与 9 道课后习题</span>
+  </a>
   <a class="resource-card" href="handouts/高等数学C-前三章知识点提要.pdf">
     <strong>前三章知识点提要</strong>
     <span>PDF · 6 页 · 按教材章节顺序</span>
@@ -24,6 +28,7 @@
 1. 微积分的准备知识
 2. 微商与微分
 3. 微分中值定理及其应用
+4. 第二次课：有理函数的积分、三角函数有理式的积分、几种简单的代数无理式的积分
 
 ## 使用说明
 
