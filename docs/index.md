@@ -4,22 +4,28 @@
 
 ## 资料目录
 
+日期为资料最近更新日期（北京时间）。
+
 <div class="resource-list">
   <a class="resource-card" href="handouts/高等数学C-第二次课讲义.pdf">
     <strong>第二次课：有理函数与有理化积分</strong>
     <span>PDF · 13 页 · 13 道例题与 9 道课后习题</span>
+    <span>更新于 <time datetime="2026-11-09">2026-11-09</time></span>
   </a>
   <a class="resource-card" href="handouts/高等数学C-前三章知识点提要.pdf">
     <strong>前三章知识点提要</strong>
     <span>PDF · 6 页 · 按教材章节顺序</span>
+    <span>更新于 <time datetime="2026-11-06">2026-11-06</time></span>
   </a>
   <a class="resource-card" href="handouts/高等数学BC-前三章讲义.pdf">
     <strong>前三章讲义</strong>
     <span>PDF · 29 页</span>
+    <span>更新于 <time datetime="2026-11-04">2026-11-04</time></span>
   </a>
   <a class="resource-card" href="handouts/高等数学BC-前三章配套解析.pdf">
     <strong>前三章配套解析</strong>
     <span>PDF · 17 页</span>
+    <span>更新于 <time datetime="2026-11-04">2026-11-04</time></span>
   </a>
 </div>
 
