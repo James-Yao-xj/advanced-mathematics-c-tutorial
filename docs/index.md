@@ -7,6 +7,11 @@
 日期为资料最近更新日期（北京时间）。
 
 <div class="resource-list">
+  <a class="resource-card" href="handouts/高等数学C-前三章教材难题解析.pdf">
+    <strong>前三章教材难题配套解析</strong>
+    <span>PDF · 13 页 · 全部 26 道题 · 红色解答</span>
+    <span>更新于 <time datetime="2026-11-16">2026-11-16</time></span>
+  </a>
   <a class="resource-card" href="handouts/高等数学C-前三章教材难题选编.pdf">
     <strong>前三章教材难题选编</strong>
     <span>PDF · 13 页 · 26 道教材习题</span>
